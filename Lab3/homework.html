@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Елушев Максим">
+	<meta name="description" content="Электронный журнал для преподавателя">
+	<link rel="shortcut icon" href="favicon.svg">
+	<title>Домашнее задание</title>
+</head>
+<body>
+<header>
+	<h1>Домашнее задание</h1>
+	<nav>
+		<ul>
+			<li><a href="schedule.html">Расписание</a></li>
+			<li><a href="grades.html">Оценки</a></li>
+			<li><a href="profile.html">Профиль</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section>
+		<form>
+			<label for="subject">Дисциплина:</label>
+			<select name="subject" id="subject">
+				<option>-- Выберите дисциплину --</option>
+				<option>Объектно-ориентированное программирование</option>
+				<option>Структуры и алгоритмы обработки данных</option>
+				<option>Теория формальных языков и методы трансляции</option>
+			</select>
+			<br><br>
+			<label for="group">Группа</label>
+			<select name="group" id="group">
+				<option value="">-- Выберите группу --</option>
+				<option value="group1">Группа 1</option>
+				<option value="group2">Группа 2</option>
+				<option value="group3">Группа 3</option>
+			</select>
+			<br><br>
+		</form>
+		<h2>Таблица домашнего задания</h2>
+		<table>
+			<thead>
+			<tr>
+				<th>Дата</th>
+				<th>Тема занятия</th>
+				<th>Домашнее задание</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th>01.04</th>
+				<td><textarea name="theme1"></textarea></td>
+				<td><textarea name="homework1"></textarea></td>
+			</tr>
+			<tr>
+				<th>08.04</th>
+				<td><textarea name="theme2"></textarea></td>
+				<td><textarea name="homework2"></textarea></td>
+			</tr>
+			<tr>
+				<th>15.04</th>
+				<td><textarea name="theme3"></textarea></td>
+				<td><textarea name="homework3"></textarea></td>
+			</tr>
+			<tr>
+				<th>22.04</th>
+				<td><textarea name="theme4"></textarea></td>
+				<td><textarea name="homework4"></textarea></td>
+			</tr>
+			<tr>
+				<th>29.04</th>
+				<td><textarea name="theme5"></textarea></td>
+				<td><textarea name="homework5"></textarea></td>
+			</tr>
+			</tbody>
+		</table>
+	</section>
+</main>
+<footer role="contentinfo">
+	<p>&copy; 2023 Электронный журнал</p>
+</footer>
+</body>
+</html>
