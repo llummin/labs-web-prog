@@ -9,13 +9,13 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f6fb;
 }
 
 .container {
     width: 320px;
     padding: 20px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container__title {
