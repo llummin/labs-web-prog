@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #f3f6fb;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    height: 64px;
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__list {
+    margin: 0 50px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu__link--underline {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 22px;
+    text-decoration-color: #4875E5;
+    text-decoration-thickness: 5px;
+}
+
+.user {
+    margin-left: auto;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.grades__select-row {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.grades__select + .grades__select {
+    margin-left: 20px;
+}
+
+.grades__select {
+    font-size: 16px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.grades__select:focus {
+    border: 2px solid #4875E5;
+    outline: none;
+}
+
+.grades__option {
+    font-size: 16px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.grades__table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.grades__tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.grades__th {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.grades__td {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.grades__input {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.footer__text {
+    font-size: 14px;
+}
