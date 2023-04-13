@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Елушев Максим">
+	<meta name="description" content="Электронный журнал для преподавателя">
+	<link rel="shortcut icon" href="../images/favicon.svg">
+	<title>Оценки</title>
+</head>
+<body>
+<header>
+	<h1>Оценки</h1>
+	<nav>
+		<ul>
+			<li><a href="schedule.html">Расписание</a></li>
+			<li><a href="homework.html">Домашнее задание</a></li>
+			<li><a href="profile.html">Профиль</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section>
+		<label for="subject">Дисциплина:</label>
+		<select name="subject" id="subject">
+			<option>-- Выберите дисциплину --</option>
+			<option>Объектно-ориентированное программирование</option>
+			<option>Структуры и алгоритмы обработки данных</option>
+			<option>Теория формальных языков и методы трансляции</option>
+		</select>
+		<label for="group">Группа</label>
+		<select name="group" id="group">
+			<option value="">-- Выберите группу --</option>
+			<option value="group1">Группа 1</option>
+			<option value="group2">Группа 2</option>
+			<option value="group3">Группа 3</option>
+		</select>
+		<table>
+			<caption>Оценки</caption>
+			<thead>
+			<tr>
+				<th>Студент</th>
+				<th>01.04</th>
+				<th>08.04</th>
+				<th>15.04</th>
+				<th>22.04</th>
+				<th>29.04</th>
+				<th>Итоговая оценка</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Иванов Иван</td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td>35</td>
+			</tr>
+			<tr>
+				<td>Петров Петр</td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td>45</td>
+			</tr>
+			<tr>
+				<td>Сидоров Семён</td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td><label>
+					<input type="number" min="1" max="100">
+				</label></td>
+				<td>50</td>
+			</tr>
+			</tbody>
+		</table>
+	</section>
+</main>
+<footer role="contentinfo">
+	<p>&copy; 2023 Электронный журнал</p>
+</footer>
+</body>
+</html>
