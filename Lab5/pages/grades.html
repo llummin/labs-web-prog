@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Елушев Максим">
+	<meta name="description" content="Электронный журнал для преподавателя">
+	<link rel="shortcut icon" href="../images/favicon.svg">
+	<link rel="stylesheet" href="../styles/grades.css">
+	<title>Оценки</title>
+</head>
+<body class="body">
+<header class="header">
+	<nav class="nav">
+		<a class="logo" href="#">
+			<img src="../images/logo.svg" alt="Книга: лого сайта">
+		</a>
+		<ul class="menu">
+			<li class="menu__list">
+				<a class="menu__link--underline" href="grades.html">Оценки</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="schedule.html">Расписание</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="homework.html">Домашнее задание</a>
+			</li>
+		</ul>
+		<a class="user" href="profile.html">
+			<img src="../images/user.svg" alt="Иконка пользователя">
+		</a>
+	</nav>
+</header>
+<main class="main">
+	<section class="grades">
+		<div class="grades__select-row">
+			<select class="grades__select">
+				<option class="grades__option">Выберите дисциплину</option>
+				<option class="grades__option">Объектно-ориентированное программирование</option>
+				<option class="grades__option">Структуры и алгоритмы обработки данных</option>
+				<option class="grades__option">Теория формальных языков и методы трансляции</option>
+			</select>
+			<select class="grades__select">
+				<option class="grades__option">Выберите группу</option>
+				<option class="grades__option">Группа 1</option>
+				<option class="grades__option">Группа 2</option>
+				<option class="grades__option">Группа 3</option>
+			</select>
+		</div>
+		<div class="container">
+			<table class="grades__table">
+				<thead class="grades__thead">
+				<tr class="grades__tr">
+					<th class="grades__th" rowspan="2">Студент</th>
+					<th class="grades__th" colspan="13">Сентябрь</th>
+					<th class="grades__th" rowspan="2">Итоговая<br>оценка</th>
+				</tr>
+				<tr class="grades__tr">
+					<th class="grades__th">2</th>
+					<th class="grades__th">3</th>
+					<th class="grades__th">4</th>
+					<th class="grades__th">5</th>
+					<th class="grades__th">6</th>
+					<th class="grades__th">7</th>
+					<th class="grades__th">9</th>
+					<th class="grades__th">10</th>
+					<th class="grades__th">11</th>
+					<th class="grades__th">12</th>
+					<th class="grades__th">13</th>
+					<th class="grades__th">16</th>
+					<th class="grades__th">18</th>
+				</tr>
+				</thead>
+				<tbody class="grades__tbody">
+				<tr class="grades__tr">
+					<td class="grades__td">Иванов Иван</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td">Петров Петр</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td"> Сидоров Семён</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td">Кузнецов Дмитрий</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td">Федорова Ольга</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td">Михайлов Игорь</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				<tr class="grades__tr">
+					<td class="grades__td">Новиков Артем</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__td">
+						<input class="grades__input" type="number" maxlength="2" min="0">
+					</td>
+					<td class="grades__total-grade">0</td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+</main>
+<footer class="footer" role="contentinfo">
+	<p class="footer__text">&copy; 2023 Электронный журнал</p>
+</footer>
+<script src="../scripts/grades.js"></script>
+</body>
+</html>
