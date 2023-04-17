@@ -40,7 +40,7 @@
 
 .menu__link {
     text-decoration: none;
-    color: inherit;
+    color: black;
     cursor: pointer;
 }
 
@@ -74,7 +74,6 @@
 
 .grades__select {
     font-size: 16px;
-    width: 200px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
