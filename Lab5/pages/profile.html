@@ -1,54 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Елушев Максим">
 	<meta name="description" content="Электронный журнал для преподавателя">
 	<link rel="shortcut icon" href="../images/favicon.svg">
+	<link rel="stylesheet" href="../styles/profile.css">
 	<title>Личный кабинет</title>
 </head>
-<body>
-<header>
-	<nav>
-		<ul>
-			<li><a href="schedule.html">Расписание</a></li>
-			<li><a href="grades.html">Оценки</a></li>
-			<li><a href="homework.html">Домашнее задание</a></li>
+<body class="body">
+<header class="header">
+	<nav class="nav">
+		<a class="logo" href="#">
+			<img src="../images/logo.svg" alt="Книга: лого сайта">
+		</a>
+		<ul class="menu">
+			<li class="menu__list">
+				<a class="menu__link--underline" href="grades.html">Оценки</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="schedule.html">Расписание</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="homework.html">Домашнее задание</a>
+			</li>
 		</ul>
+		<a class="user" href="profile.html">
+			<img src="../images/user.svg" alt="Иконка пользователя">
+		</a>
 	</nav>
 </header>
-<main>
-	<section>
-		<h1>Личный кабинет</h1>
-		<form>
-			<label for="firstName">Имя:</label>
-			<input type="text" id="firstName" name="firstName">
-			<br><br>
-			<label for="lastName">Фамилия:</label>
-			<input type="text" id="lastName" name="lastName">
-			<br><br>
-			<label for="middleName">Отчество:</label>
-			<input type="text" id="middleName" name="middleName">
-			<br><br>
-			<label>Пол:</label>
-			<input type="radio" id="genderM" name="gender" value="m">
-			<label for="genderM">Мужской</label>
-			<input type="radio" id="genderF" name="gender" value="f">
-			<label for="genderF">Женский</label>
-			<br><br>
-			<label for="email">Почта:</label>
-			<input type="email" id="email" name="email">
-			<br><br>
-			<label for="phone">Телефон:</label>
-			<input type="tel" id="phone" name="phone">
-			<br><br>
-			<input type="submit" value="Сохранить">
-			<input type="reset" value="Отменить">
+<main class="main">
+	<section class="personal-info">
+		<h1 class="personal-info__title">Личный кабинет</h1>
+		<form class="personal-info__form">
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Имя</label>
+				<input class="personal-info__form-input" type="text">
+			</div>
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Фамилия</label>
+				<input class="personal-info__form-input" type="text">
+			</div>
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Отчество</label>
+				<input class="personal-info__form-input" type="text">
+			</div>
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Пол</label>
+				<div class="personal-info__form-gender">
+					<input class="personal-info__form-radio" type="radio">
+					<label class="personal-info__form-gender-label">Мужской</label>
+					<input class="personal-info__form-radio" type="radio">
+					<label class="personal-info__form-gender-label">Женский</label>
+				</div>
+			</div>
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Почта</label>
+				<input class="personal-info__form-input" type="email">
+			</div>
+			<div class="personal-info__form-group">
+				<label class="personal-info__form-label">Телефон</label>
+				<input class="personal-info__form-input" type="tel">
+			</div>
+			<div class="personal-info__form-group">
+				<div class="personal-info__form-buttons">
+					<input class="personal-info__form-button" type="submit" value="Сохранить">
+					<input class="personal-info__form-button" type="reset" value="Отменить">
+				</div>
+			</div>
 		</form>
 	</section>
 </main>
-<footer role="contentinfo">
-	<p>&copy; 2023 Электронный журнал</p>
+<footer class="footer" role="contentinfo">
+	<p class="footer__copyright">
+		&copy; 2023 Электронный журнал
+	</p>
 </footer>
 </body>
 </html>
