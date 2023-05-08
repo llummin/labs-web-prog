@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
@@ -9,33 +9,50 @@
 	<meta name="description" content="Электронный журнал для преподавателя">
 	<link rel="shortcut icon" href="images/favicon.svg">
 	<link rel="stylesheet" href="styles/index.css">
-	<title>Журнал преподавателя</title>
+	<title>Главная</title>
 </head>
-<body>
+<body class="body">
+<header class="header">
+	<nav class="nav">
+		<a class="logo" href="#">
+			<img src="images/logo.svg" alt="Книга: лого сайта">
+		</a>
+		<ul class="menu">
+			<li class="menu__list">
+				<a class="menu__link" href="pages/grades.html">Оценки</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="pages/schedule.html">Расписание</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="pages/homework.html">Домашнее задание</a>
+			</li>
+		</ul>
+		<a class="user" href="pages/profile.html">
+			<img src="images/user.svg" alt="Иконка пользователя">
+		</a>
+	</nav>
+</header>
 <main class="main">
-	<div class="container">
-		<h1 class="container__title">Добро<br>пожаловать!</h1>
-		<p class="container__description">Введите свои данные<br>чтобы войти!</p>
-		<form class="login-form">
-			<input class="login-form__input" type="text" placeholder="Логин" required>
-			<input class="login-form__input" type="password" placeholder="Пароль" required>
-			<div class="login-form__submit-row">
-				<label class="login-form__label">
-					<input class="login-form__checkbox" type="checkbox">
-					Запомнить меня
-				</label>
-				<input class="login-form__submit" type="submit" value="Войти">
-			</div>
-		</form>
-	</div>
-	
-	<div class="content">
-		<img class="content__image"
-		     src="images/login.svg"
-		     width="500"
-		     height="500"
-		     alt="На стопке книг стоит монитор и квадратная академическая шапочка">
+	<div class="slideshow-container">
+		<img class="slideshow-image" src="images/first_building.png" alt="Первое здание">
+		<img class="slideshow-image" src="images/second_building.png" alt="Второе здание">
+		<img class="slideshow-image" src="images/third_building.png" alt="Третье здание">
+		<img class="slideshow-image" src="images/fourth_building.png" alt="Четвёртое здание">
+		<img class="slideshow-image" src="images/fifth_building.png" alt="Пятое здание">
+		<img class="slideshow-image" src="images/sixth_building.png" alt="Шестое здание">
+		<img class="slideshow-image" src="images/seventh_building.png" alt="Седьмое здание">
+		<img class="slideshow-image" src="images/eighth_building.png" alt="Восьмое здание">
+		<div class="slideshow-controls">
+			<button class="prev">&#8249;</button>
+			<button class="next">&#8250;</button>
+		</div>
+		<div class="slideshow-caption"></div>
 	</div>
 </main>
+<footer class="footer" role="contentinfo">
+	<p class="footer__text">&copy; 2023 Электронный журнал</p>
+</footer>
+<script src="scripts/slideshow.js"></script>
 </body>
 </html>
