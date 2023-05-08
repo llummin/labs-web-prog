@@ -2,74 +2,104 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="author" content="Елушев Максим">
 	<meta name="description" content="Электронный журнал для преподавателя">
 	<link rel="shortcut icon" href="../images/favicon.svg">
+	<link rel="stylesheet" href="../styles/schedule.css">
 	<title>Расписание</title>
 </head>
-<body>
-<header>
-	<h1>Расписание</h1>
-	<nav>
-		<ul>
-			<li><a href="grades.html">Оценки</a></li>
-			<li><a href="homework.html">Домашнее задание</a></li>
-			<li><a href="profile.html">Профиль</a></li>
+<body class="body">
+<header class="header">
+	<nav class="nav">
+		<a class="logo" href="#">
+			<img src="../images/logo.svg" alt="Книга: лого сайта">
+		</a>
+		<ul class="menu">
+			<li class="menu__list">
+				<a class="menu__link" href="grades.html">Оценки</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link--underline" href="schedule.html">Расписание</a>
+			</li>
+			<li class="menu__list">
+				<a class="menu__link" href="homework.html">Домашнее задание</a>
+			</li>
 		</ul>
+		<a class="user" href="profile.html">
+			<img src="../images/user.svg" alt="Иконка пользователя">
+		</a>
 	</nav>
 </header>
-<main>
-	<section>
-		<table>
-			<caption>Понедельник</caption>
-			<thead>
-			<tr>
-				<th>Время</th>
-				<th>Группа</th>
-				<th>Дисциплина</th>
-				<th>Вид занятия</th>
-				<th>Аудитория</th>
-				<th>Здание</th>
-				<th>Действие</th>
+<main class="main">
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Понедельник</caption>
+			<thead class="schedule__header">
+			<tr class="schedule__row">
+				<th class="schedule__header-cell">Время</th>
+				<th class="schedule__header-cell">Группа</th>
+				<th class="schedule__header-cell">Дисциплина</th>
+				<th class="schedule__header-cell">Вид занятия</th>
+				<th class="schedule__header-cell">Аудитория</th>
+				<th class="schedule__header-cell">Здание</th>
+				<th class="schedule__header-cell">Действие</th>
 			</tr>
 			</thead>
-			<tbody>
-			<tr>
-				<td>11:20 неч</td>
-				<td>4210</td>
-				<td>Структуры и алгоритмы обработки данных</td>
-				<td>пр</td>
-				<td>406</td>
-				<td>3</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">11:20 неч</td>
+				<td class="schedule__cell">4210</td>
+				<td class="schedule__cell">Структуры и алгоритмы обработки данных</td>
+				<td class="schedule__cell">пр</td>
+				<td class="schedule__cell">406</td>
+				<td class="schedule__cell">3</td>
+				<td class="schedule__cell">
+					<a class="schedule__link" href="#">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>13:30</td>
-				<td>4310</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>лек</td>
-				<td>327</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">13:30</td>
+				<td class="schedule__cell">4310</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">лек</td>
+				<td class="schedule__cell">327</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a class="schedule__link" href="#">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>15:10</td>
-				<td>4217</td>
-				<td>Структуры и алгоритмы обработки данных</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">15:10</td>
+				<td class="schedule__cell">4217</td>
+				<td class="schedule__cell">Структуры и алгоритмы обработки данных</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a class="schedule__link" href="#">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
@@ -77,44 +107,54 @@
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Вторник</caption>
-			<thead>
-			<tr>
-				<th>Время</th>
-				<th>Группа</th>
-				<th>Дисциплина</th>
-				<th>Вид занятия</th>
-				<th>Аудитория</th>
-				<th>Здание</th>
-				<th>Действие</th>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Вторник</caption>
+			<thead class="schedule__header">
+			<tr class="schedule__row">
+				<th class="schedule__header-cell">Время</th>
+				<th class="schedule__header-cell">Группа</th>
+				<th class="schedule__header-cell">Дисциплина</th>
+				<th class="schedule__header-cell">Вид занятия</th>
+				<th class="schedule__header-cell">Аудитория</th>
+				<th class="schedule__header-cell">Здание</th>
+				<th class="schedule__header-cell">Действие</th>
 			</tr>
 			</thead>
-			<tbody>
-			<tr>
-				<td>13:30 неч</td>
-				<td>4212</td>
-				<td>Структуры и алгоритмы обработки данных</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">13:30 неч</td>
+				<td class="schedule__cell">4212</td>
+				<td class="schedule__cell">Структуры и алгоритмы обработки данных</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>13:30 чет</td>
-				<td>4210</td>
-				<td>Структуры и алгоритмы обработки данных</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">13:30 чет</td>
+				<td class="schedule__cell">4210</td>
+				<td class="schedule__cell">Структуры и алгоритмы обработки данных</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
@@ -122,57 +162,72 @@
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Среда</caption>
-			<thead>
-			<tr>
-				<th>Время</th>
-				<th>Группа</th>
-				<th>Дисциплина</th>
-				<th>Вид занятия</th>
-				<th>Аудитория</th>
-				<th>Здание</th>
-				<th>Действие</th>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Среда</caption>
+			<thead class="schedule__header">
+			<tr class="schedule__row">
+				<th class="schedule__header-cell">Время</th>
+				<th class="schedule__header-cell">Группа</th>
+				<th class="schedule__header-cell">Дисциплина</th>
+				<th class="schedule__header-cell">Вид занятия</th>
+				<th class="schedule__header-cell">Аудитория</th>
+				<th class="schedule__header-cell">Здание</th>
+				<th class="schedule__header-cell">Действие</th>
 			</tr>
 			</thead>
-			<tbody>
-			<tr>
-				<td>08:00 неч</td>
-				<td>4310</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">08:00 неч</td>
+				<td class="schedule__cell">4310</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>08:00 чет</td>
-				<td>4318</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">08:00 чет</td>
+				<td class="schedule__cell">4318</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>13:30 неч</td>
-				<td>4212</td>
-				<td>Структуры и алгоритмы обработки данных</td>
-				<td>пр</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">13:30 неч</td>
+				<td class="schedule__cell">4212</td>
+				<td class="schedule__cell">Структуры и алгоритмы обработки данных</td>
+				<td class="schedule__cell">пр</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
@@ -180,68 +235,83 @@
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Четверг</caption>
-			<tbody>
-			<tr>
-				<td>Занятий нет</td>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Четверг</caption>
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">Занятий нет</td>
 			</tr>
 			</tbody>
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Пятница</caption>
-			<thead>
-			<tr>
-				<th>Время</th>
-				<th>Группа</th>
-				<th>Дисциплина</th>
-				<th>Вид занятия</th>
-				<th>Аудитория</th>
-				<th>Здание</th>
-				<th>Действие</th>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Пятница</caption>
+			<thead class="schedule__header">
+			<tr class="schedule__row">
+				<th class="schedule__header-cell">Время</th>
+				<th class="schedule__header-cell">Группа</th>
+				<th class="schedule__header-cell">Дисциплина</th>
+				<th class="schedule__header-cell">Вид занятия</th>
+				<th class="schedule__header-cell">Аудитория</th>
+				<th class="schedule__header-cell">Здание</th>
+				<th class="schedule__header-cell">Действие</th>
 			</tr>
 			</thead>
-			<tbody>
-			<tr>
-				<td>08:00</td>
-				<td>4317</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>3</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">08:00</td>
+				<td class="schedule__cell">4317</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">3</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>11:20</td>
-				<td>4311</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">11:20</td>
+				<td class="schedule__cell">4311</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
-			<tr>
-				<td>15:10</td>
-				<td>4312</td>
-				<td>Теория формальных языков и методы трансляции</td>
-				<td>л.р.</td>
-				<td>335</td>
-				<td>7</td>
-				<td>
-					<a href="#">
-						<img src="../images/calendar.svg" alt="Расписание группы" width="15" height="15">
+			<tr class="schedule__row">
+				<td class="schedule__cell">15:10</td>
+				<td class="schedule__cell">4312</td>
+				<td class="schedule__cell">Теория формальных языков и методы трансляции</td>
+				<td class="schedule__cell">л.р.</td>
+				<td class="schedule__cell">335</td>
+				<td class="schedule__cell">7</td>
+				<td class="schedule__cell">
+					<a href="#" class="schedule__link">
+						<img class="schedule__image"
+						     src="../images/calendar.svg"
+						     alt="Расписание группы"
+						     width="15"
+						     height="15"
+						>
 					</a>
 				</td>
 			</tr>
@@ -249,30 +319,30 @@
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Суббота</caption>
-			<tbody>
-			<tr>
-				<td>Занятий нет</td>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Суббота</caption>
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">Занятий нет</td>
 			</tr>
 			</tbody>
 		</table>
 	</section>
 	<br>
-	<section>
-		<table>
-			<caption>Воскресенье</caption>
-			<tbody>
-			<tr>
-				<td>Занятий нет</td>
+	<section class="schedule">
+		<table class="schedule__table">
+			<caption class="schedule__caption">Воскресенье</caption>
+			<tbody class="schedule__body">
+			<tr class="schedule__row">
+				<td class="schedule__cell">Занятий нет</td>
 			</tr>
 			</tbody>
 		</table>
 	</section>
 </main>
-<footer role="contentinfo">
-	<p>&copy; 2023 Электронный журнал</p>
+<footer class="footer" role="contentinfo">
+	<p class="footer__text">&copy; 2023 Электронный журнал</p>
 </footer>
 </body>
 </html>
