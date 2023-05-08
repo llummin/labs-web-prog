@@ -44,14 +44,6 @@
     cursor: pointer;
 }
 
-.menu__link--underline {
-    color: black;
-    text-decoration: underline;
-    text-underline-offset: 22px;
-    text-decoration-color: #4875E5;
-    text-decoration-thickness: 5px;
-}
-
 .user {
     margin-left: auto;
 }
