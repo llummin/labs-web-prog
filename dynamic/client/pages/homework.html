@@ -58,50 +58,25 @@
 					<th class="homework__table-header">Домашнее задание</th>
 				</tr>
 				</thead>
-				<tbody class="homework__table-body">
+				<tbody class="homework__table-body" id="homeworkTableBody">
 				<tr class="homework__table-row">
-					<th class="homework__table-date">01.04</th>
+					<th class="homework__table-date"><input type="date" class="homework__date-input"></th>
 					<td class="homework__table-theme">
-						<textarea class="homework__textarea"></textarea>
+						<input type="text" class="homework__theme-input">
 					</td>
 					<td class="homework__table-homework">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-				</tr>
-				<tr class="homework__table-row">
-					<th class="homework__table-date">08.04</th>
-					<td class="homework__table-theme">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-					<td class="homework__table-homework">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-				</tr>
-				<tr class="homework__table-row">
-					<th class="homework__table-date">15.04</th>
-					<td class="homework__table-theme">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-					<td class="homework__table-homework">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-				</tr>
-				<tr class="homework__table-row">
-					<th class="homework__table-date">22.04</th>
-					<td class="homework__table-theme">
-						<textarea class="homework__textarea"></textarea>
-					</td>
-					<td class="homework__table-homework">
-						<textarea class="homework__textarea"></textarea>
+						<input type="text" class="homework__homework-input">
 					</td>
 				</tr>
 				</tbody>
 			</table>
+			<button class="homework__add-button" onclick="addHomework()">Добавить</button>
 		</div>
 	</section>
 </main>
 <footer class="footer" role="contentinfo">
 	<p class="footer__text">&copy; 2023 Электронный журнал</p>
 </footer>
+<script src="../scripts/addHomework.js"></script>
 </body>
 </html>
