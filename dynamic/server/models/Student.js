@@ -1,4 +1,5 @@
-const {mongoose, Schema} = require("mongoose");
+const mongoose = require("mongoose");
+const {Schema} = require("mongoose");
 
 const studentSchema = new mongoose.Schema({
 	name: {
@@ -7,9 +8,9 @@ const studentSchema = new mongoose.Schema({
 	},
 	grades: [Number],
 	totalGrade: Number,
-	owner: {
-		type: Schema.ObjectId,
-		ref: 'User'
+	owner : {
+		type : Schema.ObjectId,
+		ref : 'User'
 	}
 });
 
