@@ -1,8 +1,7 @@
-// Загрузка данных из JSON-файла
+// Загрузка данных из сервера
 async function fetchData() {
-	const response = await fetch('../data.json');
-	const data = await response.json();
-	return data.students;
+	const response = await fetch('/api/v1/students');
+	return await response.json();
 }
 
 // Создание новых строк с данными студентов
@@ -77,4 +76,6 @@ async function fillTable() {
 	}
 }
 
-fillTable().catch(error => console.error("Произошла ошибка:", error));
+document.addEventListener('DOMContentLoaded', () => {
+	fillTable().catch(error => console.error("Произошла ошибка:", error));
+});
