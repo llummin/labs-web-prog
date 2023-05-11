@@ -3,6 +3,7 @@ const http = require("http");
 const path = require("path");
 const mongoose = require("mongoose").default;
 const studentController = require("./controllers/studentController");
+const userController = require("./controllers/userController");
 
 const app = express();
 const port = 3000;
@@ -22,6 +23,7 @@ mongoose.connect("mongodb+srv://admin:123@cluster0.svmgxoh.mongodb.net/JournalDB
 app.use(express.json());
 app.use(express.static(path.dirname(__dirname) + "/client"));
 app.use("/api/v1", studentController);
+app.use("/api/v1", userController);
 
 http.createServer(app).listen(port, (error) => {
 	if (error) {

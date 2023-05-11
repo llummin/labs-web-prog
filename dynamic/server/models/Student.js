@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const {mongoose, Schema} = require("mongoose");
 
 const studentSchema = new mongoose.Schema({
 	name: {
@@ -7,6 +7,10 @@ const studentSchema = new mongoose.Schema({
 	},
 	grades: [Number],
 	totalGrade: Number,
+	owner: {
+		type: Schema.ObjectId,
+		ref: 'User'
+	}
 });
 
 const Student = mongoose.model("Student", studentSchema);
